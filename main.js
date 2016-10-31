@@ -1,15 +1,15 @@
 function initMap() {
-        var sydney = {lat: -33.8688, lng: 151.2093};
+        var perth = {lat: -31.9505, lng: 115.8605};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           zoomControl: false, // set zoom manually
           scaleControl: false,
           scrollwheel: false,
           disableDoubleClickZoom: true,
-          center: sydney
+          center: perth
         });
         var marker = new google.maps.Marker({
-          position: sydney,
+          position: perth,
           map: map
         });
       }

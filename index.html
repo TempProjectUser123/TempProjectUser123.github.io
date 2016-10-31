@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Fernando Hamongan</title>
+  <title>Fernando Hamonagan</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet" media="all">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
   integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -13,56 +13,81 @@
 
         <!--HOME -->
 
-            <div id="home" class="section">
-              <div id="homeInnerContainer">
-             </div>
+        <div id="home">
+
+          <div id="homeNavPanel">
+              <div id="navItems">
+                <span class="navBtn">HOME</span>
+                <span class="navBtn">PORTFOLIO</span>
+                <span class="navBtn">CONTACT</span>
             </div>
+          </div>
+          <div id="title">
+              <div id="titleText">
+                  <span id="firstName">FERNANDO</span>
+                  <span>HAMONANGAN</span>
+                </div>
+          </div>
+        </div>
 
         <!-- PORTFOLIO PROJECTS -->
 
             <div id="project1" class="section portfolio">
-              <img class="slide" src="http://placehold.it/1000x600?text=Item 1">
+              <img class="slide" src="http://placehold.it/1500x800?text=Item 1">
             </div>
 
             <div id="project2" class="section portfolio">
-              <img class="slide" src="http://placehold.it/1000x600?text=Item 2">
+              <img class="slide" src="http://placehold.it/1500x800?text=Item 2">
             </div>
 
             <div id="project3" class="section portfolio">
-              <img class="slide" src="http://placehold.it/1000x600?text=Item 3">
+              <img class="slide" src="http://placehold.it/1500x800?text=Item 3">
             </div>
 
         <!-- CONTACT / ABOUT  -->
 
-        <div id="contact" class="section">
+        <div id="contact">
+            <div id="contactTitle">
+              <h1>GET IN TOUCH</h1>
+              <div class="line-separator"></div>
+            </div>
+            <div id="left">
+                <div id="contactFormContainer">
+                <form id="contactForm" action="https://formspree.io/contact.fernandohm@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" placeholder="Your Email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <input type="hidden" name="_subject" value="New Portfolio Message!" />
+                    <textarea name="message" rows="18" placeholder="Your Message" maxlength="500" required></textarea>
+                    <div id="contactButtonContainer">
+                    <button id="contactButton" type="submit">SEND</button>
+                  </div>
+                </form>
+            </div>
+            </div>
 
-        <div id="contactSection">
-
-            <div id="formContainer">
-
+            <div id="right">
+                <div id="contactText">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ante tortor. Sed euismod sit amet lectus eget venenatis. Nulla metus est, volutpat at cursus a, hendrerit non leo. In vitae nisl porta, lacinia erat eget, sollicitudin ipsum. Pellentesque dignissim nibh quam, a convallis lacus ultricies vel. Ut neque lectus, bibendum et magna sed, commodo pellentesque libero. Fusce ac consectetur mauris. Integer commodo vel est in placerat. Quisque bibendum, mauris volutpat cursus tincidunt, elit dolor pulvinar metus, ut faucibus est elit eu risus. Duis non magna ac nisl malesuada consectetur a sit amet sem. Morbi mauris nisl, aliquet nec justo eu, viverra blandit erat.</h5>
+                </div>
+                <div id="contactInfo">
+                    <p>M: number?</p>
+                    <p>E: contact.fernandohm@gmail.com</a></p>
+                </div>
+                <div id="mediaButtons">
+                        <a href="https://www.github.com" target="_blank"><span  id="github" class="mediaButton fa">&#xf09b;</span></a>
+                        <a href="https://dribbble.com/" target="_blank"><span id="dribbble" class="mediaButton fa">&#xf17d;</span></a>
+                        <a href="https://www.behance.net/" target="_blank"><span  id="behance" class="mediaButton fa">&#xf1b4;</span></a>
+                </div>
+                </div>
+                <footer>
+                        <span id="footerText"><span style="color: #DC381F">Fernando Hamonangan </span> &copy;2016. All Rights Reserved.</span>
+                        <a href="#home"><span id="footerIcon" class="fa">&#xf062;</span></a>
+               </footer>
             </div>
 
 
-        <!-- Google Map API -->
 
-        <div id="map"></div>
-
-        <!-- FOOTER -->
-
-        <div>
-            <footer>
-                    <span id="footerText">Created by: <span style="color: #DC381F">Fernando Hamonangan </span> &copy;2016. All Rights Reserved.<span>
-           </footer>
-        </div>
-
-        </div>
-
-        </div> <!--End Contact Div -->
-
-        </div> <!--Main Content Div used for the scroll script -->
-
-        <script src="main.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvUNyf4jYCuyyE8s9w5mDrWLrkpya2nFk&callback=initMap">
-          </script>
-        </body>
-        </html>
+            </div> <!--Main Content Div used for the scroll script -->
+           <script src="main.js"></script>
+           </body>
+           </html>

@@ -11,76 +11,309 @@
 ::-webkit-scrollbar {
     display: none;
 }
-.section{
-  height: 100vh;
-  width: 100vw;
-}
-/* change via media query or something? */
 
-/* HOME */
 
 #home{
-  display: flex;
-  flex-direction: column;
-  align-items:  center;
-  justify-content: center;
-  font-family: "Montserrat";
-  color: white;
+    height: 100vh;
+    width: 100vw;
+    background-image:url(homeImg.jpg);
+}
+    #homeNavPanel{
+        height: 100vh;
+        width: 40vw;
+        float: left;
+        background: rgba(0,0,0,.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #navItems{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 20px;
+    }
+    .navBtn{
+        margin: 10px 0 10px 0;
+        color: rgba(255,255,255,.9);
+        font-family: "Crimson Text";
+        font-size: 18px;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+    .navBtn:hover{
+        color: #f8c82d;
+        cursor: pointer;
+    }
+    #title{
+        height: 100vh;
+        width: 60vw;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #titleText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+        font-size: 80px;
+        font-family: "Montserrat";
+        line-height: 70px;
+        padding-left: 30px;
+        margin-top: ;
+    }
+    #firstName{
+        padding-left: 8px;
+    }
+
+
+
+#project1, #project2, #project3{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(245,245,245,.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-#homeInnerContainer{
-  width: 100%;
-  height: 100%;
-}
 
-/* PORTFOLIO / WORK */
-
-.portfolio{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #151515;
-}
-
-/* CONTACT / ABOUT */
-
-#contactSection{
-min-height: 100vh;
-}
-
-#formContainer{
-    height: 72vh;
-}
-
-/* google map API styling */
-#map {
-        min-height: 20vh;
+#contact{
+        height: 100vh;
         width: 100vw;
-        opacity: 0.75;
-       }
-footer{
-  min-height: 8vh;
-  background: #151515;
-  color: white;
-  font-family: "Open Sans";
-  font-size: 15px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+        background: rgba(245,245,245,.8);
 }
 
-footer a {
-  text-decoration: none;
-  color: white;
-}
-.mediaButton{
-  margin: 0 20px;
-}
-#footerText{
-  margin-top: 10px;
-}
+    #contactTitle{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        #contactTitle h1{
+            font-family: "Montserrat";
+            color: #333;
+            font-size: 36px;
+        }
+
+
+    #left{
+        height: 80vh;
+        width: 50vw;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        }
+    #contactFormContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 20px;
+    }
+    #contactForm{
+
+    }
+    input, textarea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        padding: 5px 0 0 15px;
+        border: 2px solid #777;
+        border-radius: 2px;
+        background: transparent;
+        margin: 30px auto;
+        outline: none;
+        color: #333;
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        -webkit-transition: all ease 0.4s;
+        -moz-transition: all ease 0.4s;
+        transition: all ease 0.4s;
+    }
+    input{
+        height: 40px;
+    }
+    textarea{
+    }
+    input:hover, textarea:hover{
+        background: rgba(245,245,245,.5);
+        border: 2px solid #f8c82d;
+    }
+    ::-webkit-input-placeholder  {
+          font-size: 15px;
+          font-weight: 500;
+          color: #333;
+    }
+    ::-webkit-textarea-placeholder  {
+          font-size: 15px;
+          font-weight: 500;
+          color: #333;
+    }
+    ::-moz-placeholder {
+         font-size: 15px;
+         font-weight: 500;
+         color: #333;
+    }
+    ::-ms-input-placeholder {
+        font-size: 15px;
+        font-weight: 500;
+        color: #333;
+    }
+    ::-ms-textarea-placeholder {
+        font-size: 15px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    #contactButtonContainer{
+
+    }
+    #contactButton{
+        padding: 8px;
+        width: 134px;
+        height: 36px;
+        background: #e84b3a;
+        color: rgba(255,255,255, .9);
+        font-family: "Montserrat";
+        font-size: 13px;
+        border: none;
+        border-radius: 2px;
+        -webkit-transition: all ease 0.8s;
+        -moz-transition: all ease 0.8s;
+        transition: all ease 0.8s;
+        box-shadow: inset 0 0 0 0 #e84b3a;
+        cursor: pointer;
+    }
+    #contactButton:hover{
+        box-shadow: inset 150px 0 0 0 black;
+    }
+
+
+    #right{
+        height: 80vh;
+        width: 50vw;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+    #contactText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #333;
+        font-size: 30px;
+        font-family: "Montserrat";
+        padding-left: 30px;
+        height: 10vh;
+        padding-top: 20vh;
+    }
+    #contactInfo{
+        padding-left: 30px;
+        height: 20vh;
+        padding-top: 10vh;
+        font-family: "Montserrat";
+        font-size: 18px;
+    }
+    #contactText h5 {
+        font-family: "Crimson Text";
+        color: #333;
+        line-height: 16px;
+        font-size: 17px;
+        max-width: 30vw;
+    }
+    #contactText p{
+        font-family: "Montserrat";
+        color: #333;
+        line-height: ;
+        font-size: 18px;
+        max-width: 30vw;
+
+    }
+    #mediaButtons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-left: 30px;
+      font-size:60px;
+      height: 20vh;
+      padding-bottom: 15vh;
+    }
+    #dribbble:hover{
+         color: #ea4c89;
+    }
+    #linkedin:hover{
+      color: #4875B4;
+    }
+    #behance:hover{
+         color: #1769ff;
+    }
+    #github:hover{
+        color: gray;
+    }
+    .mediaButton{
+        margin-right: 20px;
+    }
+    footer{
+        height: 10vh;
+        width: 100vw;
+        background: #363636;
+        color: white;
+        font-family: "Crimson Text";
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    #footerText{
+        margin-left: 3vw;
+        font-family: "Montserrat";
+        color: rgba(255,255,255,.9);
+        font-size: 18px;
+    }
+    #footerIcon{
+        margin-right: 5vw;
+        background: transparent;
+        border: 4px solid white;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        color: white;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+    #footerIcon:hover{
+        color:#f8c82d;
+        border: 4px solid #f8c82d;
+        background: #333;
+    }
+/* Finshed Above This Point */
