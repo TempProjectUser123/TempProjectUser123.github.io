@@ -1,4 +1,30 @@
-* {
+*{
   padding: 0;
   margin: 0;
+}
+#scroll {
+  position: absolute;
+  width: 100vw;
+  height: 100vh; /* should be the same as 100%? */
+  overflow: auto;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.section{
+  height: 100vh;
+  width: 100vw;
+}
+/* change via media query or something? */
+
+
+#home{
+
+}
+
+#project1, #project2, #project3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
